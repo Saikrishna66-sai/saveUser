@@ -41,7 +41,7 @@ public class UserControll {
 		logger.info("user list is successfully showen");
 		return userList;
 	}
-	@RequestMapping(value="/deleteUser")
+	@RequestMapping(value="/deleteUser" )
 	public String deleteUser(@RequestParam(value="userform") String id,Model m/*,HttpSession httpsession*/) {
 		String user = vail.deleteUser(id,m/*,httpsession*/);
 		return user;
